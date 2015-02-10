@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Stream",
+  "version": "0.2.1",
+  "background": {
+    "scripts": ["popup.js"],
+    "persistent": false
+  },
+  "description": "New tab replacement from Stream",
+    "chrome_url_overrides" : {
+    "newtab": "popup.html"
+  },
+  "browser_action": {
+    "default_icon": "save.png",
+    "default_title": "Add to Stream",
+    "default_popup": "background.html"
+  },
+  "author": "Michael Kant",
+  "optional_permissions": ["tabs"],
+  "permissions": ["http://*/", "tabs"]
+}
